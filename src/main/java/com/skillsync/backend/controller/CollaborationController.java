@@ -28,7 +28,12 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/api/collaboration")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(
+    origins = {
+        "http://localhost:5173",
+        "https://skillsync-frontend-iilh.onrender.com"
+    }
+)
 public class CollaborationController {
 
     private final ProjectRepository projectRepository;
@@ -1407,6 +1412,12 @@ public class CollaborationController {
                 request.getCreatedAt()
         );
     }
+
+
+
+      
+
+    
 
     // =========================================================
     // DTOs

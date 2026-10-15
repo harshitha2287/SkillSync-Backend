@@ -18,7 +18,12 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/students")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(
+    origins = {
+        "http://localhost:5173",
+        "https://skillsync-frontend-iilh.onrender.com"
+    }
+)
 public class StudentController {
 
     private final UserRepository userRepository;

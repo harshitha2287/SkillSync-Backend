@@ -11,7 +11,12 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/profile")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(
+    origins = {
+        "http://localhost:5173",
+        "https://skillsync-frontend-iilh.onrender.com"
+    }
+)
 public class ProfileController {
 
     private final UserRepository userRepository;
