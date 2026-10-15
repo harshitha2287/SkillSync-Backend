@@ -1,0 +1,46 @@
+# Maven
+target/
+.mvn/timing.properties
+
+# Environment / secrets
+.env
+.env.local
+
+# Application configuration containing secrets
+src/main/resources/application.properties
+src/main/resources/application.yml
+src/main/resources/application-*.properties
+src/main/resources/application-*.yml
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ
+*.iws
+*.ipr
+
+# VS Code / VSCodium
+.history/
+
+# Java
+*.class
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
